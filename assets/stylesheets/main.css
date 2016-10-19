@@ -1,0 +1,396 @@
+* { box-sizing: border-box; }
+
+body {
+	background: url("../images/stardust.png");
+	color: #e2e2e2;
+	font-family: 'Indie Flower', cursive;
+	overflow-x: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 3.125em;
+	padding: 1.250em 0;
+	text-align: center;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4.5em;
+	background: rgb(110,127,128);
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(51,51,51,0.5);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(51,51,51,0.5);
+	box-shadow: 0px 3px 5px 0px rgba(51,51,51,0.5);
+}
+
+nav { 
+	float: right;
+	margin: 1.688em;
+	margin-right: 8.750em;
+}
+
+.logo {
+	width: 4.5em;
+	margin-top: 0.625em;
+	margin-left: 8.750em;
+}
+
+.nav-links li { display: inline-block; }
+
+.nav-link {
+	padding: 0.625em;
+	font-size: 1.125em;
+	margin-left: 0.625em;
+	border-radius: 3px;
+}
+
+.nav-link:hover {
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+}
+
+.clicked {
+	-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+footer {
+	height: 4em;
+	background: rgba(54,69,79, 0.8);
+	-webkit-box-shadow: 0px -3px 5px 0px rgba(51,51,51,0.5);
+  -moz-box-shadow: 0px -3px 5px 0px rgba(51,51,51,0.5);
+	box-shadow: 0px -3px 5px 0px rgba(51,51,51,0.5);
+}
+
+.copyright {
+	float: left;
+	margin-top: 1.438em;
+	margin-left: 8.750em;
+}
+
+.social { 
+	float: right;
+	margin-top: 1.063em;
+	margin-right: 8.5em;
+}
+
+.social-links li, .social-link {
+	display: inline-block;
+	width: 1.875em;
+	height: 1.875em;
+	margin-right: 1.250em;
+}
+
+.social-links li:last-of-type, .social-link:last-of-type { margin-right: 0; }
+
+.linkedin { background: url("../images/Linkedin.svg"); }
+
+.linkedin:hover { background: url("../images/CLinkedin.svg"); }
+
+.github { background: url("../images/Github.svg"); }
+
+.github:hover { background: url("../images/CGithub.svg"); }
+
+.twitter { background: url("../images/Twitter.svg"); }
+
+.twitter:hover { background: url("../images/CTwitter.svg"); }
+
+.container {
+	width: 80%;
+	margin: auto;
+	margin-top: 4.5em;
+	-webkit-box-shadow: 0px 0px 11px 0px rgba(51,51,51,1);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(51,51,51,1);
+	box-shadow: 0px 0px 11px 0px rgba(51,51,51,1);
+}
+
+.about {
+	background: rgba(83,104,114, 0.8);
+	overflow: auto;
+}
+
+.pic {
+	float: right;
+	width: 20%;
+	border-radius: 50%;
+	margin: 4.375em;
+	margin-left: 0;
+}
+
+.text {
+	display: inline-block;
+	width: 55%;
+	margin-left: 5em;
+	margin-top: 5em;
+}
+
+.about-text {
+	font-size: 1.313em;
+	line-height: 1.688em;
+	margin-bottom: 1.875em;
+}
+
+.portfolio {
+	background: rgba(112,128,144, 0.8);
+	padding: 1.250em 0 1.875em 0;
+}
+
+figure { 
+	display: inline-block;
+	margin: 1.875em 0 1.875em 5.8em;
+}
+
+figcaption {
+	margin-top: 0.938em;
+	text-align: center;
+}
+
+.example {
+	display: block;
+	max-width: 100%; /* 408px */
+	margin: auto;
+}
+
+.contact {
+	background: rgba(83,104,120, 0.8);
+	padding: 1.250em 0 1.875em 0;
+}
+
+form {
+	width: 90%;
+	margin: auto;
+}
+
+.contact-info {
+	display: inline-block;
+	width: 30%;
+	margin: 0.625em 1.563em;
+}
+
+input {
+	margin-bottom: 1.875em;
+	width: 90%;
+	height: 2.500em;
+	font-size: 1.250em;
+	color: #e2e2e2;
+}
+
+.message {
+	display: inline-block;
+	width: 60%;
+	margin: 0.625em 0 1.250em 0.625em;
+	vertical-align: top;
+}
+
+.input {
+	font-family: inherit;
+	color: #e2e2e2;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+	border-right: 0;
+	border-left: 0;
+	background: transparent;
+}
+
+textarea {
+	width: 100%;
+	height: 6.875em;
+	margin-bottom: 0.625em;
+	font-size: 0.938em;
+	padding: 0.625em 0;
+	resize: none;
+}
+
+.submit {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background: #e2e2e2;
+	color: rgb(83,104,120);
+}
+
+@media (min-width: 100em) and (max-width: 113em)
+{
+	.example { width: 550px; }
+}
+
+@media (min-width: 113.5em) and (max-width: 120em)
+{
+	figure { margin-left: 4.6em; }
+
+	.text { margin-left: 7em; }
+
+	.pic { margin-right: 7em; }
+
+	.logo,
+	.copyright { margin-left: 14em; }
+
+	nav,
+	.social { margin-right: 14em; }
+
+	.contact-info { margin-left: 3em; }
+}
+
+@media (max-width: 78em) and (min-width: 47em)
+{
+	.pic { margin-top: 5.5em; }
+
+	nav { margin-right: 4em; }
+
+	.logo { 
+		margin-top: 1em;
+		margin-left: 4em;
+		width: 3.5em;
+	}
+
+	figure { 
+		display: block;
+		margin: 1.875em auto;
+	}
+
+	.contact-info {
+		width: 100%;
+		margin: auto;
+	}
+
+	.message {
+		width: 100%;
+		margin: auto;
+	}
+
+	input {
+		display: block;
+		width: 50%;
+		margin: auto;
+		margin-bottom: 1em;
+	}
+}
+
+@media (max-width: 47em)
+{
+	.logo {
+		margin-left: 3em;
+	}
+
+	nav { 
+		background: url(../images/bars.png);
+		margin-top: 0.6em;
+		margin-right: 3.5em;
+		width: 2.5em;
+		height: 2.5em;
+	}
+
+	.nav-links { 
+		margin-top: 70px;
+	}
+
+	.hide { display: none; }
+
+	.nav-links li { 
+		display: block;
+		margin-bottom: 40px;
+	}
+
+	.nav-link {
+		padding: 0.625em;
+		font-size: 1.125em;
+		margin-left: 0;
+		border-radius: 3px;
+	}
+
+	.nav-link:hover {
+		-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+		box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+	}
+
+	.clicked {
+		-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+	  -moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+		box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+	}
+
+	.example {
+		width: 90%;
+	}
+
+	.contact-info {
+		width: 100%;
+		margin: auto;
+	}
+
+	.message {
+		width: 100%;
+		margin: auto;
+	}
+
+	input {
+		display: block;
+		width: 100%;
+	}
+
+	figure { 
+		display: block;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 2em;
+	}
+
+	.copyright, .social {
+		float: none;
+		width: 100%;
+		margin: 0;
+		margin-top: 0.5em;
+	}
+
+	.about-text {
+		text-align: center;
+	}
+
+	.pic, .text {
+		float: none;
+		display: block;
+		width: 60%;
+		margin: auto;
+	}
+
+	.pic {
+		margin-bottom: 3em;
+	}
+
+	.social-links {
+		width: 170px;
+		margin: auto;
+	}
+
+	.social-links li:last-of-type, .social-link:last-of-type { margin-right: 0; }
+}
+
+@media (max-width: 30em)
+{
+	.logo {
+		margin-top: 1em;
+		width: 4em;
+	}
+
+	.about-text { font-size: 1.1em; }
+
+	.text { 
+		margin-top: 3em;
+		width: 90%;
+	}
+
+	small { text-align: center }
+}
