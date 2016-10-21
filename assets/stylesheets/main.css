@@ -243,7 +243,7 @@ textarea {
 	.contact-info { margin-left: 3em; }
 }
 
-@media (max-width: 78em) and (min-width: 47em)
+@media (max-width: 78em)
 {
 	.pic { margin-top: 5.5em; }
 
@@ -280,21 +280,19 @@ textarea {
 
 @media (max-width: 47em)
 {
-	.logo {
-		margin-left: 3em;
-	}
+	h1 { font-size: 2.5em; }
+
+	.logo { margin-left: 3em; }
 
 	nav { 
 		background: url(../images/bars.png);
-		margin-top: 0.6em;
+		margin-top: 1em;
 		margin-right: 3.5em;
 		width: 2.5em;
 		height: 2.5em;
 	}
 
-	.nav-links { 
-		margin-top: 70px;
-	}
+	.nav-links { margin-top: 70px; }
 
 	.hide { display: none; }
 
@@ -303,38 +301,9 @@ textarea {
 		margin-bottom: 40px;
 	}
 
-	.nav-link {
-		padding: 0.625em;
-		font-size: 1.125em;
-		margin-left: 0;
-		border-radius: 3px;
-	}
+	.nav-link { margin-left: 0; }
 
-	.nav-link:hover {
-		-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
-		-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
-		box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
-	}
-
-	.clicked {
-		-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
-	  -moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
-		box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
-	}
-
-	.example {
-		width: 90%;
-	}
-
-	.contact-info {
-		width: 100%;
-		margin: auto;
-	}
-
-	.message {
-		width: 100%;
-		margin: auto;
-	}
+	.example { width: 90%; }
 
 	input {
 		display: block;
@@ -355,9 +324,7 @@ textarea {
 		margin-top: 0.5em;
 	}
 
-	.about-text {
-		text-align: center;
-	}
+	.about-text { text-align: center; }
 
 	.pic, .text {
 		float: none;
@@ -366,12 +333,10 @@ textarea {
 		margin: auto;
 	}
 
-	.pic {
-		margin-bottom: 3em;
-	}
+	.pic { margin-bottom: 3em; }
 
 	.social-links {
-		width: 170px;
+		width: 45%;
 		margin: auto;
 	}
 
@@ -392,5 +357,13 @@ textarea {
 		width: 90%;
 	}
 
-	small { text-align: center }
+	.copyright { 
+		width: 50%;
+		margin: auto;
+	}
+
+	small { 
+		font-size: 12px;
+		text-align: center;
+	}
 }

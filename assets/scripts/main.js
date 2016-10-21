@@ -16,6 +16,7 @@ function toggleNav() {
 	if (width <= 752) {
 		$("nav").removeClass().addClass("navs");
 		$(".nav-links").removeClass("hide").addClass("hide");
+		$(".hide").css("display", "none");
 		$(".navs").on("click", function() {
 			$(".hide").toggle();
 		});
